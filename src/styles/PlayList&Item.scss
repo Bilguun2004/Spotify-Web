@@ -1,0 +1,52 @@
+.Playlist {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    grid: row;
+    width: 100%;
+    height: 250px;
+    gap: 20px;
+    align-items: center;
+  }
+  &-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 95%;
+    height: 20%;
+    &-big {
+      font-size: 22px;
+      color: white;
+      font-weight: 500;
+      &:hover{
+          text-decoration: underline;
+          cursor: pointer;
+      }
+      &-cont{
+          display: flex;
+          flex-direction: column;
+      }
+      &-bottom{
+        color: #b3b3b3;
+        font-size: 12px;
+      }
+    }
+    &-small{
+        font-size: 14px;
+        color: #b3b3b3;
+        font-weight: 500;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+  }
+}
+.box {
+  height: 100%;
+  width: 180px;
+  border-radius: 50px;
+  background: blueviolet;
+}

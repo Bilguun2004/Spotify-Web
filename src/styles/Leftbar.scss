@@ -1,0 +1,213 @@
+$base-color: #ffffff96;
+@mixin Text-Font($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+*{
+  overflow-y: hidden;
+}
+.hover{
+  cursor: pointer;
+}
+.Big-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  &-2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.Header-container {
+  height: 65px;
+  border: 1px black solid;
+  width: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  background: #121212;
+  justify-content:space-between;
+  &-1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 15%;
+    height: 100%;
+    margin-left: 15px;
+  }
+  &-2{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    color: white;
+    padding-right: 20px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    &-text{
+      cursor: pointer;
+    }
+    &-2{
+      display: flex;
+      align-items: center;
+    }
+    &-1{
+      display: flex;
+      align-items: center;
+      color: white;
+      gap: 25px;
+      padding-left: 25px;
+      padding-right: 15px;
+    }
+    &-vertical-line{
+      height: 20px;
+      width: 1px;
+      background-color: white;
+    }
+  }
+  &-butt-con{
+    height: 42px;
+    width: 137px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-button{
+    cursor: pointer;
+    height: 39px;
+    width: 124px;
+    border-radius: 500px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    &:hover{
+      height: 100%;
+      width: 100%;
+      font-size: 13.5px;
+    }
+  }
+}
+.h{
+  height: 200vh;
+}
+.Container {
+  margin: 0;
+  top: 0;
+  width: 20vw;
+  min-width: 200px;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  position: sticky;
+  text-align: left;
+  padding-left: 20px;
+  gap: 35px;
+  &-top {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: left;
+    &-item {
+      color: $base-color;
+      display: flex;
+      gap: 10px;
+      width: 80%;
+      @include Text-Font("medium", "400");
+      &:hover {
+        cursor: pointer;
+        color: white;
+        transition: 0.3s;
+      }
+    }
+  }
+  &-mid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &-item {
+      @include Text-Font("medium", "400");
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      align-items: center;
+      color: $base-color;
+      &:hover {
+        cursor: pointer;
+        color: white;
+        transition: 0.3s;
+      }
+      &-1 {
+        background: #a4a4a4;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1px;
+      }
+      &-2 {
+        background: linear-gradient(142deg, #450af5, #c4efd9);
+        height: 25px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1px;
+      }
+    }
+  }
+}
+.Footer {
+  width: 100%;
+  min-width: 750px;
+  height: 80px;
+  background-image: linear-gradient(90deg, #af2896, #509bf5);
+  position: fixed;
+  bottom: 0;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  &-button{
+      font-size: 14px;
+      min-width: 220px;
+      height: 40px;
+      border-radius: 500px;
+      background: white;
+      font-weight: 650;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2e77d0;
+      &-container{
+          height: 45px;
+          width: 230px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      &:hover{
+          width: 100%;
+          height: 100%;
+          font-size: 14.5px;
+      }
+  }
+  &-text-container{
+      width: 70vw;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+}

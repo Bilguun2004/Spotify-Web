@@ -1,0 +1,8 @@
+.header:hover{
+    &-text{
+        background-color: white !important;
+        &:hover{
+        background-color: green !important;
+        }
+    }
+}
