@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Register{
+    max-width: 450px;
+    min-height: 4000px;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    margin: 0;
+    &-header{
+        padding-top: 30px;
+        top: 0;
+        height: 192px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 700;
+        font-size: 29px;
+        text-align: center;
+        gap: 20px;
+        letter-spacing: -0.04em;
+    }
+    &-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        &-container{
+            height: 55px;
+            width: 58%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-button{
+            width: 93%;
+            height: 93%;
+            border-radius: 500px;
+            font-size: 15px;
+            font-weight: 600;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            z-index: 99999;
+            
+            &:hover{
+                height: 100%;
+                width: 95%;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.Or{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+    flex-direction: row;
+    width: 100%;
+    color: rgb(83, 83,83);
+    &-line{
+        width: 150px;
+        height: 1px;
+        border-top: 1px rgb(127, 127,127) solid;
+    }
+}
+.Inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+//Input Component
+
+.Input-container{
+    display: flex;
+    flex-direction: column;
+    &-text{
+        font-size: 14px;
+        font-weight: 700;
+        color: black;
+    }
+    &-input{
+        height: 52px;
+        width: 90%;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 14px;
+        border: 1px black solid;
+        margin-top: 10px;
+    }
+    &-error{
+        color: #d31225;
+        margin-top: 8px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+    &-phone{
+        text-decoration: underline;
+        color: #117A37;
+        font-size: 14px;
+        padding-top: 14px;
+        font-weight: 500;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.Birthsection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 14px;
+    &-text{
+        margin-top: 30px;
+    }
+    &-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        &-day{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            &-top{
+                font-size: 14px;
+                font-weight: 700;
+            }
+            &-bottom{
+                max-width: 90px;
+                height: 52px;
+                border-radius: 4px;
+                text-align: center;
+                border: 1px black solid;
+            }
+        }
+        &-month{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            &-top{
+                font-size: 14px;
+                font-weight: 700;
+            }
+            &-bottom{
+                width: 202px;
+                height: 52px;
+                border-radius: 4px;
+                text-align: center;
+                border: 1px black solid;
+            }
+        }
+
+        &-year{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            &-top{
+                font-size: 14px;
+                font-weight: 700;
+            }
+            &-bottom{
+                max-width: 112px;
+                height: 52px;
+                border-radius: 4px;
+                text-align: center;
+                border: 1px black solid;
+            }
+        }
+    }
+}

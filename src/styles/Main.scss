@@ -1,12 +1,12 @@
 $main-background-color: rgb(100, 100, 100);
 
 .Main-container{
-    padding: 20px;
-    height: 100vh;
+    padding-top: 20px;
+    height: 100%;
     width: 100%;
     background: transparent;
     background: $main-background-color;
     display: flex;
     flex-direction: column;
-    overflow-x: scroll;
+    justify-content: center;
 }
