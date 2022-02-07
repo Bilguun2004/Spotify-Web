@@ -21,7 +21,6 @@ $base-color: #ffffff96;
 .Header-container {
   height: 65px;
   border: 1px black solid;
-  width: 100%;
   position: relative;
   top: 0;
   right: 0;
@@ -102,7 +101,8 @@ $base-color: #ffffff96;
   margin: 0;
   top: 0;
   width: 20vw;
-  min-width: 200px;
+  min-width: 230px;
+  max-width: 270px;
   background-color: black;
   height: 100vh;
   display: flex;

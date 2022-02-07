@@ -1,12 +1,14 @@
-$main-background-color: rgb(100, 100, 100);
+$main-background-color: linear-gradient(78deg, rgb(0, 0, 0) 0%, rgb(68, 66, 66) 100%);;
 
 .Main-container{
     padding-top: 20px;
-    height: 100%;
+    height: auto;
     width: 100%;
     background: transparent;
     background: $main-background-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
+    overflow-x: none;
 }

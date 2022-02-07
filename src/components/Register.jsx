@@ -8,7 +8,7 @@ const Register = () => {
     <div className="container">
       <div className="Register">
         <div className="Register-header">
-          <img src={logo} height="70px" width={"160px"} />
+          <img src={logo} height="90px" width={"160px"} />
           <span>Sign up for free to start listening.</span>
         </div>
         <div className="Register-buttons">
@@ -35,6 +35,12 @@ const Register = () => {
             or
             <span className="Or-line"></span>
         </div>
+          <div style={{width:'100%', textAlign:'center' }}>
+          <h3 >
+       Sign up with your email address
+       </h3>
+        </div>
+       
         <div className="Inputs">
           <Input Title={"What's your email?"} placeholder={'Enter your email.'}  phone={true}/>
           <Input Title={"Confirm your email"} placeholder={'Enter your email again.'}/>
