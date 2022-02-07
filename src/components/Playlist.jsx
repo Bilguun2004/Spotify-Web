@@ -11,6 +11,23 @@ const Playlist = ({Playlistname,description}) =>{
                 
                 <span className='Playlist-top-small'>SEE ALL</span>
             </div>
+            <div className='Playlist-item-container'>
+                <div className='Playlist-item-container-item'>
+                    1
+                </div>
+                <div className='Playlist-item-container-item'>
+                    2
+                </div>
+                <div className='Playlist-item-container-item'>
+                    3
+                </div>
+                <div className='Playlist-item-container-item'>
+                    4
+                </div>
+                <div className='Playlist-item-container-item'>
+                    5
+                </div>
+            </div>
         </div>
     )
 }
