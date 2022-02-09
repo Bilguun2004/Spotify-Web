@@ -3,6 +3,7 @@ import left from "../assets/left.svg";
 import right from "../assets/right.svg";
 import burger from "../assets/burger.png";
 import close from "../assets/close.png";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="Header-container">
@@ -18,10 +19,15 @@ const Header = () => {
         </div>
         <span className="Header-container-2-vertical-line"></span>
         <div className="Header-container-2-1">
-          <span className="Header-container-2-text">SIGN UP</span>
+          <Link className="Header-container-2-text" to={'/register'}>
+            <span style={{textDecoration:'none'}}>SIGN UP</span>
+          </Link>
+          <Link to={'/login'}>
           <div className="Header-container-butt-con">
-            <span className="Header-container-button">LOG IN</span>
+            <span style={{textDecoration:'none'}} className="Header-container-button">LOG IN</span>
           </div>
+          </Link>
+          
           <div>
             <div className="Header-container-burger">
               <img
@@ -36,7 +42,7 @@ const Header = () => {
               />
             </div>
             <div className="Header-container-burger-modal">
-
+              
             </div>
           </div>
         </div>

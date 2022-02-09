@@ -57,6 +57,7 @@
       overflow-x: hidden;
       grid-gap: 24px;
       &-item{
+        position: relative;
         max-width: 230px;
         height: 220px;
         border-radius:13px;
@@ -66,6 +67,14 @@
         justify-content: center;
         padding: 20px;
         gap: 30px;
+        transition: 0.3s;
+        &:hover{
+          cursor: pointer;
+          background:#ffffff0c;
+          .animation{
+            display: flex;
+          }
+        }
         &-text{
           height: 30%;
           width: 100%;
@@ -99,4 +108,30 @@
   width: 180px;
   border-radius: 50px;
   background: blueviolet;
+}
+
+@keyframes play {
+  0% {top: 60%;}
+  100%{top: 43%;}  
+}
+.animation{
+  right: 14%;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  height: 32px;
+  width: 32px;
+  background: rgb(41, 182, 48);
+  border-radius: 50%;
+  display: none;
+  flex-direction: column;
+  align-items: center;justify-content: center;
+  animation-name: play;
+  animation-duration: 0.1s;
+  transform: rotate(90deg);
+  &:hover{
+    height: 35.5px;
+    width: 35.5px;
+    cursor:default;
+  }
 }

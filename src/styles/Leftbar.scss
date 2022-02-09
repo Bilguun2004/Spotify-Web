@@ -72,6 +72,8 @@ $base-color: #ffffff96;
     // padding-bottom: 2px;
     &-text{
       cursor: pointer;
+      text-decoration: none;
+      color: white;
     }
     &-2{
       display: flex;
@@ -110,10 +112,12 @@ $base-color: #ffffff96;
     color: black;
     font-size: 13px;
     font-weight: 600;
+    text-decoration: none;
     &:hover{
       height: 100%;
       width: 100%;
       font-size: 13.5px;
+      text-decoration: none;
     }
   }
 }
