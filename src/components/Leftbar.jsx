@@ -50,6 +50,7 @@ const Leftbar = () => {
       </div>
 
       <div className="h"></div>
+      <Footer/>
     </div>
   );
 };
